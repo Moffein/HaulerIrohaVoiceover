@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Master Mixer" ID="{610FB1A0-2B93-488F-BBFF-817FE7830BB8}" ShortID="891227224">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{DE666403-69FE-4E6A-BD85-CF88CAD4DFE0}" ShortID="762156500">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Volume_SFX" ID="{39CFF8A8-384B-40F3-85B1-402DA74C2E4F}" WorkUnitID="{01A45D81-BA39-4E23-AB2D-97C7BFE234CC}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{C2BDB434-A9BE-49C2-B4EA-F71C341887A2}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="SFX Mixer" ID="{2E2A5721-2D5E-427B-BFC1-6A695B40440A}" ShortID="224312392">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Voiceover" ID="{6F51BFF5-C7D3-486C-905A-706024BE3427}" ShortID="875362427">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Iroha_Cafe_monolog_1" ID="{AC477300-42CA-449D-AECB-422334C2171D}" ShortID="198617954">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Cafe_monolog_1" ID="{D1F3B454-EAEE-48BF-8E27-D637739CCB45}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Cafe_monolog_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="921530035"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Cafe_monolog_1" ID="{D1F3B454-EAEE-48BF-8E27-D637739CCB45}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Cafe_monolog_3" ID="{5601E00B-0D5C-4562-9769-680D6F96472F}" ShortID="859729216">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Cafe_monolog_3" ID="{51F75AB0-544E-4710-8E66-F30B6BE24DE3}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Cafe_monolog_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="871704806"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Cafe_monolog_3" ID="{51F75AB0-544E-4710-8E66-F30B6BE24DE3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Cafe_monolog_4" ID="{A5AD7405-AEAC-4987-82E4-ACAB340729B3}" ShortID="720219315">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Cafe_monolog_4" ID="{1E2A74B5-C94D-42C4-A2CF-58A6ECD9A3B9}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Cafe_monolog_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="153978861"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Cafe_monolog_4" ID="{1E2A74B5-C94D-42C4-A2CF-58A6ECD9A3B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Cafe_monolog_5" ID="{F30B2EFB-E7B6-41CD-A671-9F411ED12BBD}" ShortID="736660496">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Cafe_monolog_5" ID="{D8F25E5E-044F-4ABD-A5E2-CD2D028B7D1E}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Cafe_monolog_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="313046257"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Cafe_monolog_5" ID="{D8F25E5E-044F-4ABD-A5E2-CD2D028B7D1E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_CommonSkill" ID="{19764798-08F6-4678-A72A-B83CF90C4DD9}" ShortID="207281211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_CommonSkill" ID="{536783DF-52F7-4548-A38D-1354F13B80E0}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_CommonSkill.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="692216156"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_CommonSkill" ID="{536783DF-52F7-4548-A38D-1354F13B80E0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLobby_1" ID="{87FD17E3-5918-4E6C-87D5-CB410D47065E}" ShortID="961072284">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLobby_1" ID="{3AE4DAB4-265B-4240-BE20-4EA1ACAB3374}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLobby_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="72314733"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLobby_1" ID="{3AE4DAB4-265B-4240-BE20-4EA1ACAB3374}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLobby_2" ID="{F0D44CDD-C9B4-4B3D-9A8B-A7179DE869A2}" ShortID="611744470">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLobby_2" ID="{069D7C59-25F2-496E-A9CF-D7A0ED33CEC3}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLobby_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="786686448"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLobby_2" ID="{069D7C59-25F2-496E-A9CF-D7A0ED33CEC3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLobby_3" ID="{BDCB8ADD-D10A-4598-A4EE-0E6374A92853}" ShortID="851735692">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLobby_3" ID="{7A07FA18-002D-488B-ADC9-3A8AFE8201D3}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLobby_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="504722313"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLobby_3" ID="{7A07FA18-002D-488B-ADC9-3A8AFE8201D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLogin_1" ID="{B1A9937C-4944-4DF7-9E6B-1BEA4186E655}" ShortID="498260959">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLogin_1" ID="{2A847D0A-C8E0-44F9-9833-EB1FE3E21F6D}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLogin_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="950738042"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLogin_1" ID="{2A847D0A-C8E0-44F9-9833-EB1FE3E21F6D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLogin_2" ID="{E0AEEF85-6820-4194-91D1-1EF01A20136B}" ShortID="210320793">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLogin_2" ID="{6B8416C6-3CB7-4814-B7B5-670CBF1645C8}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLogin_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="430662909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLogin_2" ID="{6B8416C6-3CB7-4814-B7B5-670CBF1645C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLogin_Season_1" ID="{640BB234-EA47-4E47-8C4B-5DCB16417784}" ShortID="197368076">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLogin_Season_1" ID="{92172254-6B3A-4DEA-BD91-887CB3A6EE46}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLogin_Season_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="929221313"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLogin_Season_1" ID="{92172254-6B3A-4DEA-BD91-887CB3A6EE46}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLogin_Season_2" ID="{0B730424-D209-4132-BF3F-8954A6F5A184}" ShortID="119141077">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLogin_Season_2" ID="{99D54D58-DA12-4C2A-AB7D-500CB90C63A2}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLogin_Season_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="125417851"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLogin_Season_2" ID="{99D54D58-DA12-4C2A-AB7D-500CB90C63A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventLogin_Season_End" ID="{19295F48-AFBF-48C2-BC9B-5FEE4D0262E3}" ShortID="682603357">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLogin_Season_End" ID="{5A54645B-9855-4237-AB94-53D0FF1994DA}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLogin_Season_End.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="876116273"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLogin_Season_End" ID="{5A54645B-9855-4237-AB94-53D0FF1994DA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventMission_1" ID="{324C91FE-8FCD-4805-88FA-F02DBE27766C}" ShortID="532765369">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventMission_1" ID="{5E79241C-1C6C-4F15-9CDF-08784E8C56B4}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventMission_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="84968639"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventMission_1" ID="{5E79241C-1C6C-4F15-9CDF-08784E8C56B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventMission_Day_End" ID="{EF6D1C59-54C9-4819-8FD1-3493F1D0F83E}" ShortID="762449331">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventMission_Day_End" ID="{550A00AC-35F0-436D-827C-D5555343E9F5}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventMission_Day_End.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="704443274"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventMission_Day_End" ID="{550A00AC-35F0-436D-827C-D5555343E9F5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventMission_Get_1" ID="{A01B80A6-0B00-4DC6-8F24-E5E991B25C6B}" ShortID="52250478">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventMission_Get_1" ID="{322AF96F-C4D7-45C1-9A48-34C1D3EE90EB}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventMission_Get_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="750374691"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventMission_Get_1" ID="{322AF96F-C4D7-45C1-9A48-34C1D3EE90EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventMission_Get_2" ID="{8C900AA3-B620-4292-BB64-98EB027E9C1B}" ShortID="82927387">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventMission_Get_2" ID="{210CCA7E-C999-4920-AE43-AAE4A4BB00CA}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventMission_Get_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="901869630"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventMission_Get_2" ID="{210CCA7E-C999-4920-AE43-AAE4A4BB00CA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventMission_Login_1" ID="{D9CE5B55-6211-4321-A602-E8E34D1FDF10}" ShortID="765203389">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventMission_Login_1" ID="{AD0F678C-8FCA-4D45-A86A-CB47D28926B1}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventMission_Login_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="510211968"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventMission_Login_1" ID="{AD0F678C-8FCA-4D45-A86A-CB47D28926B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_EventMission_Login_2" ID="{51A31EAF-D2E4-4E0E-8C31-143AF79FB73B}" ShortID="142633530">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventMission_Login_2" ID="{7F62D15D-11C9-4A31-B4F3-D7DB11433021}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventMission_Login_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1057153890"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventMission_Login_2" ID="{7F62D15D-11C9-4A31-B4F3-D7DB11433021}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_ExWeapon_Get" ID="{65477527-E65D-43A9-9866-3EEC38E7BC28}" ShortID="646762801">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_ExWeapon_Get" ID="{22925807-08F2-43D4-9A73-45625E623CF4}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_ExWeapon_Get.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="433012620"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_ExWeapon_Get" ID="{22925807-08F2-43D4-9A73-45625E623CF4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Formation_In_1" ID="{C263EEC7-9AA2-475F-8C72-D0E8B7581175}" ShortID="968131508">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Formation_In_1" ID="{75BFFD91-B3AC-4A00-B88F-54ED7DF3FC69}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Formation_In_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="533439051"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Formation_In_1" ID="{75BFFD91-B3AC-4A00-B88F-54ED7DF3FC69}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Formation_In_2" ID="{7B8704C2-62FE-4401-8F46-09D54CDA3222}" ShortID="572252260">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Formation_In_2" ID="{8A5C0F68-CBA1-4CA0-BEFF-3414C9B14785}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Formation_In_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="819783175"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Formation_In_2" ID="{8A5C0F68-CBA1-4CA0-BEFF-3414C9B14785}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Gachaget" ID="{A60E9E69-1E17-44EF-BB0A-E43F00F9477B}" ShortID="335910882">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Gachaget" ID="{4A206F01-6063-409B-9244-8555498E6393}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Gachaget.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="279403255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Gachaget" ID="{4A206F01-6063-409B-9244-8555498E6393}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_MemorialLobby_1" ID="{B41EF25E-FEA3-405F-B3A1-52EEE0C74B78}" ShortID="621673578">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_MemorialLobby_1" ID="{413A15D8-EEA2-4E31-B1AB-304C33FA152C}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_MemorialLobby_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="571825644"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_MemorialLobby_1" ID="{413A15D8-EEA2-4E31-B1AB-304C33FA152C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_MemorialLobby_2_1" ID="{925BFE8A-44C1-4C7C-A7DF-29E81DB81D44}" ShortID="1021895524">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_MemorialLobby_2_1" ID="{8E549865-B5DC-4D8D-9D1E-EBFBDCFA7248}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_MemorialLobby_2_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="611975015"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_MemorialLobby_2_1" ID="{8E549865-B5DC-4D8D-9D1E-EBFBDCFA7248}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_MemorialLobby_2_2" ID="{3127F1EB-6927-4F3A-9C40-51D1A93D4D75}" ShortID="32035054">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_MemorialLobby_2_2" ID="{980DCF9B-FE91-46F7-A216-5B4C90FFBC9D}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_MemorialLobby_2_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="606068253"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_MemorialLobby_2_2" ID="{980DCF9B-FE91-46F7-A216-5B4C90FFBC9D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_MemorialLobby_3" ID="{662A0335-CB8E-4D87-BD89-C40D564B6D48}" ShortID="1065677911">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_MemorialLobby_3" ID="{4010441A-CD39-498A-8635-9B6FCF0421EF}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_MemorialLobby_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="293638131"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_MemorialLobby_3" ID="{4010441A-CD39-498A-8635-9B6FCF0421EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_MemorialLobby_5_1" ID="{1A0EE321-43DD-4A33-B49E-807715107D13}" ShortID="73932354">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_MemorialLobby_5_1" ID="{B52DCF63-2067-4D81-9837-1ADEEA0F304A}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_MemorialLobby_5_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="60837268"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_MemorialLobby_5_1" ID="{B52DCF63-2067-4D81-9837-1ADEEA0F304A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_MemorialLobby_5_2" ID="{00858560-A5A7-498E-8B6D-463B117A7C88}" ShortID="579987880">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_MemorialLobby_5_2" ID="{E6650C6C-CA8C-4662-88D8-C69022CA8241}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_MemorialLobby_5_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="660358796"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_MemorialLobby_5_2" ID="{E6650C6C-CA8C-4662-88D8-C69022CA8241}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Season_Birthday" ID="{31BA72B5-24A8-49FA-AC26-B608569A1E7A}" ShortID="255797351">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Season_Birthday" ID="{4D89C4A7-5097-4D17-A291-F49CA87EBB93}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Season_Birthday.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="425055999"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Season_Birthday" ID="{4D89C4A7-5097-4D17-A291-F49CA87EBB93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Season_Birthday_Player" ID="{E26EE41D-A653-42AC-89D9-48CDE55E64C6}" ShortID="172712376">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Season_Birthday_Player" ID="{9CEB09F9-D0D1-4E72-AD7B-2E2368C78578}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Season_Birthday_Player.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="393732175"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Season_Birthday_Player" ID="{9CEB09F9-D0D1-4E72-AD7B-2E2368C78578}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Season_Halloween" ID="{673D6BA1-F92F-4885-904F-6591EE269139}" ShortID="285037807">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Season_Halloween" ID="{E287B29C-0566-45A5-BABF-D2436F69B285}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Season_Halloween.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="416459215"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Season_Halloween" ID="{E287B29C-0566-45A5-BABF-D2436F69B285}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Season_NewYear" ID="{1856760B-4814-47F3-9ED3-A8472581BA78}" ShortID="463746676">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Season_NewYear" ID="{3EAD1BB9-2982-47C4-843C-81DC61D435D3}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Season_NewYear.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="80136039"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Season_NewYear" ID="{3EAD1BB9-2982-47C4-843C-81DC61D435D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Season_Xmas" ID="{1051E288-2B0B-4A62-BA6E-8FE93DB13EFE}" ShortID="975120551">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Season_Xmas" ID="{6AF9A23B-19B7-4B28-849B-149F01919EC5}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Season_Xmas.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="40638561"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Season_Xmas" ID="{6AF9A23B-19B7-4B28-849B-149F01919EC5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Iroha_Title" ID="{5BE64D49-48A6-4CAB-9027-B36F0ECBFE8B}" ShortID="647309695">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_Title" ID="{B993D475-23C0-4923-8949-7CEB0D6F5A4D}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_Title.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="738887517"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_Title" ID="{B993D475-23C0-4923-8949-7CEB0D6F5A4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="LevelUp_Short" ID="{278689B4-815B-46ED-990D-04A7C64193CD}" ShortID="438996618">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_Growup_3" ID="{3AE80340-7BFA-4665-A92C-B76367145CFE}" ShortID="990399866">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Growup_3" ID="{116437E9-27D5-423B-936A-582F7B836159}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Growup_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="782137256"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Growup_3" ID="{116437E9-27D5-423B-936A-582F7B836159}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Growup_2" ID="{69EB2170-E0A1-4BE1-9A31-C64A4C494B6C}" ShortID="197817812">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Growup_2" ID="{F21B0A80-8536-402B-9159-B2B838BCD32F}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Growup_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="602049861"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Growup_2" ID="{F21B0A80-8536-402B-9159-B2B838BCD32F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Relationship" ID="{9C3F37EB-2A03-411E-A7E0-1D0570F84F35}" ShortID="875057326">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_Relationship_Up_1" ID="{3CEC968F-440E-4FD7-AE92-8AF48147C916}" ShortID="556835336">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Relationship_Up_1" ID="{ADF41CC9-C8D5-40D7-B870-6A58372A141C}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Relationship_Up_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="613404820"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Relationship_Up_1" ID="{ADF41CC9-C8D5-40D7-B870-6A58372A141C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Relationship_Up_2" ID="{B78568D1-25E3-42DB-983D-FEC5C1575422}" ShortID="647892704">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Relationship_Up_2" ID="{63B3C1FA-58B1-419D-9E67-15E8A1B76FDA}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Relationship_Up_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="450849398"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Relationship_Up_2" ID="{63B3C1FA-58B1-419D-9E67-15E8A1B76FDA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Relationship_Up_4" ID="{AD8B7188-A1AF-4715-90F9-D0F2A904989B}" ShortID="581764073">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Relationship_Up_4" ID="{97DDD117-E904-44A8-9EB8-441FC374F966}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Relationship_Up_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="679716399"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Relationship_Up_4" ID="{97DDD117-E904-44A8-9EB8-441FC374F966}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Relationship_Up_3" ID="{D802D921-B9E3-4F8D-89EA-6CB2711DB12B}" ShortID="965556727">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Relationship_Up_3" ID="{F3BE1F7D-1148-40A5-ADDE-3FDB702DBBA7}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Relationship_Up_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="148090643"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Relationship_Up_3" ID="{F3BE1F7D-1148-40A5-ADDE-3FDB702DBBA7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Ex" ID="{68032B44-2B67-49BC-92F3-54C55EB17C35}" ShortID="16915886">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_ExSkill_Level_1" ID="{086448A7-0E24-477B-9DBD-28D1D06F0893}" ShortID="322428816">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_ExSkill_Level_1" ID="{909A6CCE-6018-4897-BCE9-5BBE4003F03A}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_ExSkill_Level_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1067790313"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_ExSkill_Level_1" ID="{909A6CCE-6018-4897-BCE9-5BBE4003F03A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_ExSkill_Level_3" ID="{D0D70F85-0269-45D3-8B81-096DF845F1E2}" ShortID="20818208">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_ExSkill_Level_3" ID="{524883BA-4BFC-40A6-9819-828F75FB8D50}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_ExSkill_Level_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="856998013"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_ExSkill_Level_3" ID="{524883BA-4BFC-40A6-9819-828F75FB8D50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_ExSkill_Level_2" ID="{DC3BC7BB-EFE6-4753-BA25-FC6CC686CB6E}" ShortID="585100517">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_ExSkill_Level_2" ID="{876C0CAB-8FFD-4973-9889-BCB52971B48B}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_ExSkill_Level_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="565355288"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_ExSkill_Level_2" ID="{876C0CAB-8FFD-4973-9889-BCB52971B48B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="ExDeploy" ID="{9C76F8A9-5577-4AE4-BFD8-DBF910AA9D42}" ShortID="99594252">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_ExSkill_1" ID="{3E20914A-685D-4B71-8F7B-9C1506555915}" ShortID="427329405">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_ExSkill_1" ID="{59FF8F9C-34E6-48E2-8678-967BA1E9BAF8}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_ExSkill_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="649162873"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_ExSkill_1" ID="{59FF8F9C-34E6-48E2-8678-967BA1E9BAF8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_ExSkill_2" ID="{9578BBC8-2B35-452B-B7BC-82777C4FF363}" ShortID="1029469368">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_ExSkill_2" ID="{6E0C984F-72FD-4F0C-881E-000840C0E63E}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_ExSkill_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1062455897"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_ExSkill_2" ID="{6E0C984F-72FD-4F0C-881E-000840C0E63E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_ExSkill_3" ID="{99B3E08C-B07C-445A-8435-7FB38535DCB3}" ShortID="218124092">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_ExSkill_3" ID="{432356A2-B76E-4B55-8022-CD968DCE2C4B}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_ExSkill_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="796223979"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_ExSkill_3" ID="{432356A2-B76E-4B55-8022-CD968DCE2C4B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Lobby" ID="{97AF70AD-9117-4E44-BE3B-3D2026B9C47A}" ShortID="988226214">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_Lobby_2" ID="{CB4E8545-458B-441A-954B-5319F4FC52EA}" ShortID="105621820">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Lobby_2" ID="{FA795936-6F28-4193-B72C-E0E05487A0C0}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Lobby_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="324181105"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Lobby_2" ID="{FA795936-6F28-4193-B72C-E0E05487A0C0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Lobby_5" ID="{46D90E40-0161-4B71-A807-9E2E41B759EA}" ShortID="55299937">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Lobby_5" ID="{7AD53AEA-47D6-4E18-B2CD-8BCED204BFF9}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Lobby_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="24073708"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Lobby_5" ID="{7AD53AEA-47D6-4E18-B2CD-8BCED204BFF9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_LogIn_2" ID="{75761F73-7B87-4FDB-9C79-3A87A983C120}" ShortID="694022599">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_LogIn_2" ID="{B2FCF3BC-CED1-476B-A732-B2E3A5B7A582}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_LogIn_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="934450839"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_LogIn_2" ID="{B2FCF3BC-CED1-476B-A732-B2E3A5B7A582}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Lobby_1" ID="{77A630ED-B062-41DE-BB60-C31221DF825B}" ShortID="968073213">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Lobby_1" ID="{68194AF5-DB0A-4433-8C81-A3EFBC8F0DDC}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Lobby_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="862465954"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Lobby_1" ID="{68194AF5-DB0A-4433-8C81-A3EFBC8F0DDC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Lobby_3" ID="{5EE9A000-3932-47E6-953C-F7DD72B78B37}" ShortID="860136015">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Lobby_3" ID="{EA2F78A3-EFF6-4851-B4A5-19555714843C}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Lobby_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="55911636"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Lobby_3" ID="{EA2F78A3-EFF6-4851-B4A5-19555714843C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_LogIn_1" ID="{526E18EA-2671-4305-AEFA-F072C99DDA5C}" ShortID="815271258">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_LogIn_1" ID="{673E700B-4AF5-4F32-82A7-0B44D963D181}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_LogIn_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="407774792"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_LogIn_1" ID="{673E700B-4AF5-4F32-82A7-0B44D963D181}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Lobby_4" ID="{FA388E76-C7D8-4E1F-BB55-B08E2369B9C9}" ShortID="403996312">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Lobby_4" ID="{7FAC928F-2AD3-47D4-8A1A-713AAC7B258B}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Lobby_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="121650372"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Lobby_4" ID="{7FAC928F-2AD3-47D4-8A1A-713AAC7B258B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="SM015601_CommonSkill" ID="{4DD0FC95-171F-4A15-93A6-41B685F93AAB}" ShortID="61649183">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SM015601_CommonSkill" ID="{0831C77E-9BEB-47D5-BC89-6AD838780A38}">
+													<Language>SFX</Language>
+													<AudioFile>SM015601_CommonSkill.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="825045466"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SM015601_CommonSkill" ID="{0831C77E-9BEB-47D5-BC89-6AD838780A38}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Victory" ID="{39E1F1FF-EA2D-49D7-94C9-E2EB96B0314B}" ShortID="719929126">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_MemorialLobby_4" ID="{0C5BFF8A-6F0F-459A-8769-77DB2EEAC076}" ShortID="914567708">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_MemorialLobby_4" ID="{3D5D8B9A-11C0-4925-8DB8-4A75BF030FD2}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_MemorialLobby_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="276413791"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_MemorialLobby_4" ID="{3D5D8B9A-11C0-4925-8DB8-4A75BF030FD2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Defeat" ID="{F706FF03-D2BC-4703-8FA6-04795062D221}" ShortID="890537357">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_EventMission_2" ID="{D2AD8B84-0B2F-4CA4-A83F-6267A8D054F9}" ShortID="910603065">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_EventMission_2" ID="{AC5E570A-15E9-4865-8CEC-71E53538B52A}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_EventMission_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="688569311"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_EventMission_2" ID="{AC5E570A-15E9-4865-8CEC-71E53538B52A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Cafe_monolog_2" ID="{B44F0C42-E1C0-458A-856A-EBE0794F2A23}" ShortID="197309623">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Cafe_monolog_2" ID="{9FC8C8D5-7C94-4DB8-9A66-0DFB87917080}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Cafe_monolog_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="342277148"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Cafe_monolog_2" ID="{9FC8C8D5-7C94-4DB8-9A66-0DFB87917080}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Iroha_EventLobby_4" ID="{C2445AA6-CC10-4805-9990-337E0EB60146}" ShortID="141527068">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Iroha_EventLobby_4" ID="{01499900-9F04-40A9-86F0-7E2EA546E4D1}">
+													<Language>SFX</Language>
+													<AudioFile>Iroha_EventLobby_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="822612074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Iroha_EventLobby_4" ID="{01499900-9F04-40A9-86F0-7E2EA546E4D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="LevelUp_Long" ID="{C74C99EE-7EE8-4651-88EB-1445FD05A9CD}" ShortID="561531776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Iroha_Growup_1" ID="{BCE76B40-F4ED-430B-BE28-76226B850C22}" ShortID="623758859">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Growup_1" ID="{B20A88E8-622C-4537-9E7C-C7017112D1F7}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Growup_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="388186672"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Growup_1" ID="{B20A88E8-622C-4537-9E7C-C7017112D1F7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Iroha_Growup_4" ID="{46132D77-E05F-4B68-97D9-CF385BEC9CDD}" ShortID="751828406">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="VoiceAtt" ID="{DB6FACC1-BAD6-4A32-8758-09D6CA76F23E}" WorkUnitID="{AA87578B-77FB-412A-9DDA-454B01BC3762}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Iroha_Growup_4" ID="{3DD9D26C-0DB7-4363-9833-3109C2C47951}">
+															<Language>SFX</Language>
+															<AudioFile>Iroha_Growup_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="576210437"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Iroha_Growup_4" ID="{3DD9D26C-0DB7-4363-9833-3109C2C47951}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

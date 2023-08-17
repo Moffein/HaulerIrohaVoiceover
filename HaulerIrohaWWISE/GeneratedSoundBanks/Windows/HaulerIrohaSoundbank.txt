@@ -1,0 +1,52 @@
+Event	ID	Name			Wwise Object Path	Notes
+	317396931	Play_HaulerIroha_ExDeploy			\Default Work Unit\Play_HaulerIroha_ExDeploy	
+	432140018	Play_HaulerIroha_TitleDrop			\Default Work Unit\Play_HaulerIroha_TitleDrop	
+	459220698	Play_HaulerIroha_TankCannon			\Default Work Unit\Play_HaulerIroha_TankCannon	
+	669169749	Play_HaulerIroha_LevelUp_Short			\Default Work Unit\Play_HaulerIroha_LevelUp_Short	
+	728460607	Play_HaulerIroha_Lobby_Halloween			\Default Work Unit\Play_HaulerIroha_Lobby_Halloween	
+	1440135129	Play_HaulerIroha_Victory			\Default Work Unit\Play_HaulerIroha_Victory	
+	1550702346	Play_HaulerIroha_Lobby_bday			\Default Work Unit\Play_HaulerIroha_Lobby_bday	
+	2192721004	Play_HaulerIroha_Defeat			\Default Work Unit\Play_HaulerIroha_Defeat	
+	2441465307	Play_HaulerIroha_LevelUp_Long			\Default Work Unit\Play_HaulerIroha_LevelUp_Long	
+	2580850951	Play_HaulerIroha_Lobby			\Default Work Unit\Play_HaulerIroha_Lobby	
+	2694876683	Play_HaulerIroha_Lobby_Newyear			\Default Work Unit\Play_HaulerIroha_Lobby_Newyear	
+	2726519517	Play_HaulerIroha_CommonSkill			\Default Work Unit\Play_HaulerIroha_CommonSkill	
+	3503552158	Play_HaulerIroha_Ex			\Default Work Unit\Play_HaulerIroha_Ex	
+	3562965831	Play_HaulerIroha_Lobby_xmas			\Default Work Unit\Play_HaulerIroha_Lobby_xmas	
+	4160731047	Play_HaulerIroha_EventLobby4			\Default Work Unit\Play_HaulerIroha_EventLobby4	
+	4275758903	Play_HaulerIroha_AcquireScepter			\Default Work Unit\Play_HaulerIroha_AcquireScepter	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3673881719	Volume_SFX			\Default Work Unit\Volume_SFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	24073708	Iroha_Lobby_5	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_5		393432
+	40638561	Iroha_Season_Xmas	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Season_Xmas_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_Season_Xmas		1481400
+	55911636	Iroha_Lobby_3	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_3		618272
+	80136039	Iroha_Season_NewYear	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Season_NewYear_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_Season_NewYear		1325712
+	121650372	Iroha_Lobby_4	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_4		450226
+	276413791	Iroha_MemorialLobby_4	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_MemorialLobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Iroha_MemorialLobby_4		517582
+	324181105	Iroha_Lobby_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_2		181684
+	342277148	Iroha_Cafe_monolog_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Cafe_monolog_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Defeat\Iroha_Cafe_monolog_2		326378
+	388186672	Iroha_Growup_1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Growup_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Long\Iroha_Growup_1		595592
+	407774792	Iroha_LogIn_1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_LogIn_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_LogIn_1		936934
+	416459215	Iroha_Season_Halloween	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Season_Halloween_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_Season_Halloween		1217746
+	425055999	Iroha_Season_Birthday	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Season_Birthday_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_Season_Birthday		1419268
+	433012620	Iroha_ExWeapon_Get	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExWeapon_Get_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_ExWeapon_Get		831000
+	565355288	Iroha_ExSkill_Level_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExSkill_Level_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Ex\Iroha_ExSkill_Level_2		203940
+	576210437	Iroha_Growup_4	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Growup_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Long\Iroha_Growup_4		716178
+	602049861	Iroha_Growup_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Growup_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Short\Iroha_Growup_2		358690
+	649162873	Iroha_ExSkill_1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExSkill_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExDeploy\Iroha_ExSkill_1		702550
+	688569311	Iroha_EventMission_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_EventMission_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Defeat\Iroha_EventMission_2		176556
+	692216156	Iroha_CommonSkill	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_CommonSkill_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_CommonSkill		88842
+	738887517	Iroha_Title	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Title_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_Title		358586
+	782137256	Iroha_Growup_3	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Growup_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\LevelUp_Short\Iroha_Growup_3		341000
+	796223979	Iroha_ExSkill_3	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExSkill_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExDeploy\Iroha_ExSkill_3		562590
+	822612074	Iroha_EventLobby_4	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_EventLobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_EventLobby_4		465378
+	825045466	SM015601_CommonSkill	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\SM015601_CommonSkill_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\SM015601_CommonSkill		147046
+	856998013	Iroha_ExSkill_Level_3	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExSkill_Level_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Ex\Iroha_ExSkill_Level_3		177950
+	862465954	Iroha_Lobby_1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_1		584792
+	934450839	Iroha_LogIn_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_LogIn_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_LogIn_2		794264
+	1062455897	Iroha_ExSkill_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExSkill_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\ExDeploy\Iroha_ExSkill_2		447496
+	1067790313	Iroha_ExSkill_Level_1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_ExSkill_Level_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Ex\Iroha_ExSkill_Level_1		203376
+

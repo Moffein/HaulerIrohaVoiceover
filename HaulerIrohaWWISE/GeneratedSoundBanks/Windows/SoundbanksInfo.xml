@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="509147858" Language="SFX" Hash="3391473575">
+			<ObjectPath>\SoundBanks\Default Work Unit\HaulerIrohaSoundbank</ObjectPath>
+			<ShortName>HaulerIrohaSoundbank</ShortName>
+			<Path>HaulerIrohaSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4275758903" Name="Play_HaulerIroha_AcquireScepter" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_AcquireScepter">
+					<IncludedMemoryFiles>
+						<File Id="433012620" Language="SFX">
+							<ShortName>Iroha_ExWeapon_Get.wav</ShortName>
+							<Path>SFX\Iroha_ExWeapon_Get_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2726519517" Name="Play_HaulerIroha_CommonSkill" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_CommonSkill">
+					<IncludedMemoryFiles>
+						<File Id="692216156" Language="SFX">
+							<ShortName>Iroha_CommonSkill.wav</ShortName>
+							<Path>SFX\Iroha_CommonSkill_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2192721004" Name="Play_HaulerIroha_Defeat" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Defeat">
+					<IncludedMemoryFiles>
+						<File Id="342277148" Language="SFX">
+							<ShortName>Iroha_Cafe_monolog_2.wav</ShortName>
+							<Path>SFX\Iroha_Cafe_monolog_2_10C4C929.wem</Path>
+						</File>
+						<File Id="688569311" Language="SFX">
+							<ShortName>Iroha_EventMission_2.wav</ShortName>
+							<Path>SFX\Iroha_EventMission_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4160731047" Name="Play_HaulerIroha_EventLobby4" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_EventLobby4">
+					<IncludedMemoryFiles>
+						<File Id="822612074" Language="SFX">
+							<ShortName>Iroha_EventLobby_4.wav</ShortName>
+							<Path>SFX\Iroha_EventLobby_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3503552158" Name="Play_HaulerIroha_Ex" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Ex">
+					<IncludedMemoryFiles>
+						<File Id="565355288" Language="SFX">
+							<ShortName>Iroha_ExSkill_Level_2.wav</ShortName>
+							<Path>SFX\Iroha_ExSkill_Level_2_10C4C929.wem</Path>
+						</File>
+						<File Id="856998013" Language="SFX">
+							<ShortName>Iroha_ExSkill_Level_3.wav</ShortName>
+							<Path>SFX\Iroha_ExSkill_Level_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1067790313" Language="SFX">
+							<ShortName>Iroha_ExSkill_Level_1.wav</ShortName>
+							<Path>SFX\Iroha_ExSkill_Level_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="317396931" Name="Play_HaulerIroha_ExDeploy" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_ExDeploy">
+					<IncludedMemoryFiles>
+						<File Id="649162873" Language="SFX">
+							<ShortName>Iroha_ExSkill_1.wav</ShortName>
+							<Path>SFX\Iroha_ExSkill_1_10C4C929.wem</Path>
+						</File>
+						<File Id="796223979" Language="SFX">
+							<ShortName>Iroha_ExSkill_3.wav</ShortName>
+							<Path>SFX\Iroha_ExSkill_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1062455897" Language="SFX">
+							<ShortName>Iroha_ExSkill_2.wav</ShortName>
+							<Path>SFX\Iroha_ExSkill_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2441465307" Name="Play_HaulerIroha_LevelUp_Long" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_LevelUp_Long">
+					<IncludedMemoryFiles>
+						<File Id="388186672" Language="SFX">
+							<ShortName>Iroha_Growup_1.wav</ShortName>
+							<Path>SFX\Iroha_Growup_1_10C4C929.wem</Path>
+						</File>
+						<File Id="576210437" Language="SFX">
+							<ShortName>Iroha_Growup_4.wav</ShortName>
+							<Path>SFX\Iroha_Growup_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="669169749" Name="Play_HaulerIroha_LevelUp_Short" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_LevelUp_Short">
+					<IncludedMemoryFiles>
+						<File Id="602049861" Language="SFX">
+							<ShortName>Iroha_Growup_2.wav</ShortName>
+							<Path>SFX\Iroha_Growup_2_10C4C929.wem</Path>
+						</File>
+						<File Id="782137256" Language="SFX">
+							<ShortName>Iroha_Growup_3.wav</ShortName>
+							<Path>SFX\Iroha_Growup_3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2580850951" Name="Play_HaulerIroha_Lobby" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Lobby">
+					<IncludedMemoryFiles>
+						<File Id="24073708" Language="SFX">
+							<ShortName>Iroha_Lobby_5.wav</ShortName>
+							<Path>SFX\Iroha_Lobby_5_10C4C929.wem</Path>
+						</File>
+						<File Id="55911636" Language="SFX">
+							<ShortName>Iroha_Lobby_3.wav</ShortName>
+							<Path>SFX\Iroha_Lobby_3_10C4C929.wem</Path>
+						</File>
+						<File Id="121650372" Language="SFX">
+							<ShortName>Iroha_Lobby_4.wav</ShortName>
+							<Path>SFX\Iroha_Lobby_4_10C4C929.wem</Path>
+						</File>
+						<File Id="324181105" Language="SFX">
+							<ShortName>Iroha_Lobby_2.wav</ShortName>
+							<Path>SFX\Iroha_Lobby_2_10C4C929.wem</Path>
+						</File>
+						<File Id="407774792" Language="SFX">
+							<ShortName>Iroha_LogIn_1.wav</ShortName>
+							<Path>SFX\Iroha_LogIn_1_10C4C929.wem</Path>
+						</File>
+						<File Id="862465954" Language="SFX">
+							<ShortName>Iroha_Lobby_1.wav</ShortName>
+							<Path>SFX\Iroha_Lobby_1_10C4C929.wem</Path>
+						</File>
+						<File Id="934450839" Language="SFX">
+							<ShortName>Iroha_LogIn_2.wav</ShortName>
+							<Path>SFX\Iroha_LogIn_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1550702346" Name="Play_HaulerIroha_Lobby_bday" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Lobby_bday">
+					<IncludedMemoryFiles>
+						<File Id="425055999" Language="SFX">
+							<ShortName>Iroha_Season_Birthday.wav</ShortName>
+							<Path>SFX\Iroha_Season_Birthday_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="728460607" Name="Play_HaulerIroha_Lobby_Halloween" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Lobby_Halloween">
+					<IncludedMemoryFiles>
+						<File Id="416459215" Language="SFX">
+							<ShortName>Iroha_Season_Halloween.wav</ShortName>
+							<Path>SFX\Iroha_Season_Halloween_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2694876683" Name="Play_HaulerIroha_Lobby_Newyear" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Lobby_Newyear">
+					<IncludedMemoryFiles>
+						<File Id="80136039" Language="SFX">
+							<ShortName>Iroha_Season_NewYear.wav</ShortName>
+							<Path>SFX\Iroha_Season_NewYear_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3562965831" Name="Play_HaulerIroha_Lobby_xmas" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Lobby_xmas">
+					<IncludedMemoryFiles>
+						<File Id="40638561" Language="SFX">
+							<ShortName>Iroha_Season_Xmas.wav</ShortName>
+							<Path>SFX\Iroha_Season_Xmas_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="459220698" Name="Play_HaulerIroha_TankCannon" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_TankCannon">
+					<IncludedMemoryFiles>
+						<File Id="825045466" Language="SFX">
+							<ShortName>SM015601_CommonSkill.wav</ShortName>
+							<Path>SFX\SM015601_CommonSkill_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="432140018" Name="Play_HaulerIroha_TitleDrop" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_TitleDrop">
+					<IncludedMemoryFiles>
+						<File Id="738887517" Language="SFX">
+							<ShortName>Iroha_Title.wav</ShortName>
+							<Path>SFX\Iroha_Title_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1440135129" Name="Play_HaulerIroha_Victory" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Victory">
+					<IncludedMemoryFiles>
+						<File Id="276413791" Language="SFX">
+							<ShortName>Iroha_MemorialLobby_4.wav</ShortName>
+							<Path>SFX\Iroha_MemorialLobby_4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX" ObjectPath="\Game Parameters\Default Work Unit\Volume_SFX"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="263542888">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
