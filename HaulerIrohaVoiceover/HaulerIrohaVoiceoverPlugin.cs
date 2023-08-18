@@ -74,7 +74,7 @@ namespace HaulerIrohaVoiceover
             SkinDef[] skins = SkinCatalog.FindSkinsForBody(haulerIndex);
             foreach (SkinDef skinDef in skins)
             {
-                if (skinDef.name == "HaulerIrohaSkinDef")//TODO: CHANGE
+                if (skinDef.name == "HaulerIrohaSkinDef")
                 {
                     foundSkin = true;
                     HaulerIrohaVoiceoverComponent.requiredSkinDefs.Add(skinDef);
