@@ -179,6 +179,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_HaulerIroha_Relationship" ID="{D5CF0581-2B71-41A4-90BB-20672D8FBBAE}">
+					<ChildrenList>
+						<Action Name="" ID="{9AD12C0B-7F3A-4EE8-ADDE-E90DAB408536}" ShortID="1026609384">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Relationship" ID="{9C3F37EB-2A03-411E-A7E0-1D0570F84F35}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
