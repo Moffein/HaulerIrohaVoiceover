@@ -1,4 +1,5 @@
-﻿using RoR2;
+﻿using BaseVoiceoverLib;
+using RoR2;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,6 @@ namespace HaulerIrohaVoiceover.Components
 {
     public class HaulerIrohaVoiceoverComponent : BaseVoiceoverComponent
     {
-        public static List<SkinDef> requiredSkinDefs = new List<SkinDef>();
-        public static ItemIndex ScepterIndex;
         private float levelCooldown = 0f;
         private float primaryCooldown = 0f;
         private float utilityCooldown = 0f;
@@ -17,20 +16,10 @@ namespace HaulerIrohaVoiceover.Components
         public static NetworkSoundEventDef nseTank;
         public static NetworkSoundEventDef nseCommon;
 
-        protected override void Awake()
-        {
-            spawnVoicelineDelay = 3f;
-            if (Run.instance && Run.instance.stageClearCount == 0)
-            {
-                spawnVoicelineDelay = 6.5f;
-            }
-            base.Awake();
-        }
-
         protected override void Start()
         {
             base.Start();
-            if (inventory && inventory.GetItemCount(ScepterIndex) > 0) acquiredScepter = true;
+            if (inventory && inventory.GetItemCount(scepterIndex) > 0) acquiredScepter = true;
         }
 
         protected override void FixedUpdate()
@@ -41,16 +30,10 @@ namespace HaulerIrohaVoiceover.Components
             if (levelCooldown > 0f) levelCooldown -= Time.fixedDeltaTime;
         }
 
-        public override void PlayDamageBlockedServer() { }
-
         public override void PlayDeath()
         {
             TryPlaySound("Play_HaulerIroha_Defeat", 3.3f, true);
         }
-
-        public override void PlayHurt(float percentHPLost) { }
-
-        public override void PlayJump() { }
 
         public override void PlayLevelUp()
         {
@@ -59,23 +42,17 @@ namespace HaulerIrohaVoiceover.Components
             if (played) levelCooldown = 60f;
         }
 
-        public override void PlayLowHealth() { }
-
-        public override void PlayPrimaryAuthority()
+        public override void PlayPrimaryAuthority(GenericSkill skill)
         {
             if (primaryCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseTank, 1.5f, false);
             if (played) primaryCooldown = 20f;
         }
 
-        public override void PlaySecondaryAuthority() { }
-
         public override void PlaySpawn()
         {
             TryPlaySound("Play_HaulerIroha_ExDeploy", 7.5f, true);
         }
-
-        public override void PlaySpecialAuthority() { }
 
         public override void PlayTeleporterFinish()
         {
@@ -87,7 +64,7 @@ namespace HaulerIrohaVoiceover.Components
             TryPlaySound("Play_HaulerIroha_Ex", 1.95f, false);
         }
 
-        public override void PlayUtilityAuthority()
+        public override void PlayUtilityAuthority(GenericSkill skill)
         {
             if (utilityCooldown > 0f) return;
             bool played = TryPlayNetworkSound(nseCommon, 0.85f, false);
@@ -102,7 +79,7 @@ namespace HaulerIrohaVoiceover.Components
         protected override void Inventory_onItemAddedClient(ItemIndex itemIndex)
         {
             base.Inventory_onItemAddedClient(itemIndex);
-            if (ScepterIndex != ItemIndex.None && itemIndex == ScepterIndex)
+            if (scepterIndex != ItemIndex.None && itemIndex == scepterIndex)
             {
                 PlayAcquireScepter();
             }

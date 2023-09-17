@@ -11,13 +11,14 @@ using UnityEngine.Networking;
 using System.Collections.Generic;
 using HaulerIrohaVoiceover.Modules;
 using HaulerIrohaVoiceover.Components;
+using BaseVoiceoverLib;
 
 namespace HaulerIrohaVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.Potmobile")]
     [BepInDependency("com.Schale.HaulerIrohaSkin")]
-    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.0.1")]
+    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.0")]
     public class HaulerIrohaVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<bool> enableVoicelines;
@@ -28,7 +29,6 @@ namespace HaulerIrohaVoiceover
         public void Awake()
         {
             Files.PluginInfo = this.Info;
-            BaseVoiceoverComponent.Init();
             RoR2.RoR2Application.onLoad += OnLoad;
             new Content().Initialize();
 
@@ -66,124 +66,80 @@ namespace HaulerIrohaVoiceover
 
         private void OnLoad()
         {
-            bool foundSkin = false;
             BodyIndex haulerIndex = BodyCatalog.FindBodyIndex("MoffeinHaulerBody");
-            SurvivorIndex si = SurvivorCatalog.GetSurvivorIndexFromBodyIndex(haulerIndex);
-            haulerSurvivorDef = SurvivorCatalog.GetSurvivorDef(si);
 
+            SkinDef irohaSkin = null;
             SkinDef[] skins = SkinCatalog.FindSkinsForBody(haulerIndex);
             foreach (SkinDef skinDef in skins)
             {
                 if (skinDef.name == "HaulerIrohaSkinDef")
                 {
-                    foundSkin = true;
-                    HaulerIrohaVoiceoverComponent.requiredSkinDefs.Add(skinDef);
+                    irohaSkin = skinDef;
                     break;
                 }
             }
 
-            if (!foundSkin)
+            if (!irohaSkin)
             {
                 Debug.LogError("HaulerIrohaVoiceover: Hauler Iroha SkinDef not found. Voicelines will not work!");
             }
-            else if (haulerSurvivorDef)
+            else
             {
-                On.RoR2.CharacterBody.Start += AttachVoiceoverComponent;
-                On.RoR2.SurvivorMannequins.SurvivorMannequinSlotController.RebuildMannequinInstance += (orig, self) =>
-                {
-                    orig(self);
-                    if (self.currentSurvivorDef == haulerSurvivorDef)
-                    {
-                        //Loadout isn't loaded first time this is called, so we need to manually get it.
-                        //Probably not the most elegant way to resolve this.
-                        if (self.loadoutDirty)
-                        {
-                            if (self.networkUser)
-                            {
-                                self.networkUser.networkLoadout.CopyLoadout(self.currentLoadout);
-                            }
-                        }
-
-                        //Check SkinDef
-                        BodyIndex bodyIndexFromSurvivorIndex = SurvivorCatalog.GetBodyIndexFromSurvivorIndex(self.currentSurvivorDef.survivorIndex);
-                        int skinIndex = (int)self.currentLoadout.bodyLoadoutManager.GetSkinIndex(bodyIndexFromSurvivorIndex);
-                        SkinDef safe = HG.ArrayUtils.GetSafe<SkinDef>(BodyCatalog.GetBodySkins(bodyIndexFromSurvivorIndex), skinIndex);
-                        if (true && enableVoicelines.Value && HaulerIrohaVoiceoverComponent.requiredSkinDefs.Contains(safe))
-                        {
-                            bool played = false;
-                            if (!playedSeasonalVoiceline)
-                            {
-                                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
-                                {
-                                    Util.PlaySound("Play_HaulerIroha_Lobby_Newyear", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 11 && System.DateTime.Today.Day == 16)
-                                {
-                                    Util.PlaySound("Play_HaulerIroha_Lobby_bday", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
-                                {
-                                    Util.PlaySound("Play_HaulerIroha_Lobby_Halloween", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-                                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
-                                {
-                                    Util.PlaySound("Play_HaulerIroha_Lobby_xmas", self.mannequinInstanceTransform.gameObject);
-                                    played = true;
-                                }
-
-                                if (played)
-                                {
-                                    playedSeasonalVoiceline = true;
-                                }
-                            }
-                            if (!played)
-                            {
-                                if (Util.CheckRoll(5f))
-                                {
-                                    Util.PlaySound("Play_HaulerIroha_TitleDrop", self.mannequinInstanceTransform.gameObject);
-                                }
-                                else
-                                {
-                                    Util.PlaySound("Play_HaulerIroha_Lobby", self.mannequinInstanceTransform.gameObject);
-                                }
-                            }
-                        }
-                    }
-                };
+                VoiceoverInfo vo = new VoiceoverInfo(typeof(HaulerIrohaVoiceoverComponent),irohaSkin, "MoffeinHaulerBody");
+                vo.selectActions += IrohaSelect;
             }
-            HaulerIrohaVoiceoverComponent.ScepterIndex = ItemCatalog.FindItemIndex("ITEM_ANCIENT_SCEPTER");
 
-            //Add NSE here
-            nseList.Add(new NSEInfo(HaulerIrohaVoiceoverComponent.nseTank));
-            nseList.Add(new NSEInfo(HaulerIrohaVoiceoverComponent.nseCommon));
             RefreshNSE();
         }
 
-        private void AttachVoiceoverComponent(On.RoR2.CharacterBody.orig_Start orig, CharacterBody self)
+        private void IrohaSelect(GameObject mannequinObject)
         {
-            orig(self);
-            if (self)
+            bool played = false;
+            if (!playedSeasonalVoiceline)
             {
-                if (self.bodyIndex == BodyCatalog.FindBodyIndex("MoffeinHaulerBody") && (HaulerIrohaVoiceoverComponent.requiredSkinDefs.Contains(SkinCatalog.GetBodySkinDef(self.bodyIndex, (int)self.skinIndex))))
+                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
                 {
-                    BaseVoiceoverComponent existingVoiceoverComponent = self.GetComponent<BaseVoiceoverComponent>();
-                    if (!existingVoiceoverComponent) self.gameObject.AddComponent<HaulerIrohaVoiceoverComponent>();
+                    Util.PlaySound("Play_HaulerIroha_Lobby_Newyear", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 11 && System.DateTime.Today.Day == 16)
+                {
+                    Util.PlaySound("Play_HaulerIroha_Lobby_bday", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 10 && System.DateTime.Today.Day == 31)
+                {
+                    Util.PlaySound("Play_HaulerIroha_Lobby_Halloween", mannequinObject);
+                    played = true;
+                }
+                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                {
+                    Util.PlaySound("Play_HaulerIroha_Lobby_xmas", mannequinObject);
+                    played = true;
+                }
+
+                if (played)
+                {
+                    playedSeasonalVoiceline = true;
+                }
+            }
+            if (!played)
+            {
+                if (Util.CheckRoll(5f))
+                {
+                    Util.PlaySound("Play_HaulerIroha_TitleDrop", mannequinObject);
+                }
+                else
+                {
+                    Util.PlaySound("Play_HaulerIroha_Lobby", mannequinObject);
                 }
             }
         }
 
         private void InitNSE()
         {
-            HaulerIrohaVoiceoverComponent.nseTank = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            HaulerIrohaVoiceoverComponent.nseTank.eventName = "Play_HaulerIroha_TankCannon";
-            Content.networkSoundEventDefs.Add(HaulerIrohaVoiceoverComponent.nseTank);
-
-            HaulerIrohaVoiceoverComponent.nseCommon = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
-            HaulerIrohaVoiceoverComponent.nseCommon.eventName = "Play_HaulerIroha_CommonSkill";
-            Content.networkSoundEventDefs.Add(HaulerIrohaVoiceoverComponent.nseCommon);
+            HaulerIrohaVoiceoverComponent.nseTank = RegisterNSE("Play_HaulerIroha_TankCannon");
+            HaulerIrohaVoiceoverComponent.nseCommon = RegisterNSE("Play_HaulerIroha_CommonSkill");
         }
 
         public void RefreshNSE()
@@ -193,6 +149,16 @@ namespace HaulerIrohaVoiceover
                 nse.ValidateParams();
             }
         }
+
+        private NetworkSoundEventDef RegisterNSE(string eventName)
+        {
+            NetworkSoundEventDef nse = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
+            nse.eventName = eventName;
+            Content.networkSoundEventDefs.Add(nse);
+            nseList.Add(new NSEInfo(nse));
+            return nse;
+        }
+
 
         public static List<NSEInfo> nseList = new List<NSEInfo>();
         public class NSEInfo
