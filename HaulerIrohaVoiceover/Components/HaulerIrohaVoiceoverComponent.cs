@@ -13,8 +13,7 @@ namespace HaulerIrohaVoiceover.Components
         private float utilityCooldown = 0f;
         private bool acquiredScepter = false;
 
-        public static NetworkSoundEventDef nseTank;
-        public static NetworkSoundEventDef nseCommon;
+        public static NetworkSoundEventDef nseTank, nseCommon, nseTitle, nseCafe2, nseDarui, nseShikatanai, nseThanks, nseTonegawa, nseSigh, nseToramaru, nseLaugh;
 
         protected override void Start()
         {
@@ -73,7 +72,7 @@ namespace HaulerIrohaVoiceover.Components
 
         public override void PlayVictory()
         {
-            TryPlaySound("Play_HaulerIroha_EventLobby4", 4.85f, true);
+            TryPlaySound("Play_HaulerIroha_BeatGame", 5.25f, true);
         }
 
         protected override void Inventory_onItemAddedClient(ItemIndex itemIndex)
@@ -102,6 +101,62 @@ namespace HaulerIrohaVoiceover.Components
         public void PlayAcquireLegendary()
         {
             TryPlaySound("Play_HaulerIroha_Relationship", 6.1f, false);
+        }
+
+        public override void PlayHurt(float percentHPLost)
+        {
+            if (percentHPLost >= 0.1f)
+            {
+                TryPlaySound("Play_HaulerIroha_Sigh", 0f, false);
+            }
+        }
+
+        protected override void CheckInputs()
+        {
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTitle))
+            {
+                TryPlayNetworkSound(nseTitle, 3.6f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTank))
+            {
+                TryPlayNetworkSound(nseTank, 1.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonCommon))
+            {
+                TryPlayNetworkSound(nseCommon, 0.85f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonCafe2))
+            {
+                TryPlayNetworkSound(nseCafe2, 3.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonDarui))
+            {
+                TryPlayNetworkSound(nseDarui, 1.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonShikatanai))
+            {
+                TryPlayNetworkSound(nseShikatanai, 1.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonThanks))
+            {
+                TryPlayNetworkSound(nseThanks, 7.5f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTonegawa))
+            {
+                TryPlayNetworkSound(nseTonegawa, 4.8f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonSigh))
+            {
+                TryPlayNetworkSound(nseSigh, 0.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonLaugh))
+            {
+                TryPlayNetworkSound(nseLaugh, 0.1f, false);
+            }
+            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonToramaru))
+            {
+                TryPlayNetworkSound(nseToramaru, 7.5f, false);
+            }
         }
     }
 }

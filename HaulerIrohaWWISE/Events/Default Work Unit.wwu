@@ -190,6 +190,83 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_HaulerIroha_Darui" ID="{941CFF9D-39B3-44E5-9E75-766FCE904017}">
+					<ChildrenList>
+						<Action Name="" ID="{02858CDE-6466-45CD-8078-4C2496614793}" ShortID="949778601">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Iroha_EventMission_2" ID="{D2AD8B84-0B2F-4CA4-A83F-6267A8D054F9}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HaulerIroha_Cafe2" ID="{4C92FB60-3054-4C3E-AE8F-E22C1839EA10}">
+					<ChildrenList>
+						<Action Name="" ID="{138F9AF2-02D2-4A92-B38D-A1BAC803DCEE}" ShortID="899345513">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Iroha_Cafe_monolog_2" ID="{B44F0C42-E1C0-458A-856A-EBE0794F2A23}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HaulerIroha_Shikatanai" ID="{D0621AF8-818E-43BE-9282-100B4D3D75AA}">
+					<ChildrenList>
+						<Action Name="" ID="{897C8748-1FA8-4BA4-9E97-C34DB2637FD9}" ShortID="991349192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Iroha_ExSkill_Level_3" ID="{D0D70F85-0269-45D3-8B81-096DF845F1E2}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HaulerIroha_Thanks" ID="{582E6717-A691-4720-B836-671CBA0182EB}">
+					<ChildrenList>
+						<Action Name="" ID="{B5475D01-079B-4C30-828D-96AA6F46DFE7}" ShortID="285258382">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Iroha_Growup_4" ID="{46132D77-E05F-4B68-97D9-CF385BEC9CDD}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HaulerIroha_BeatGame" ID="{0BCD9548-CECA-4D0E-AA4B-F72309648972}">
+					<ChildrenList>
+						<Action Name="" ID="{33A96B1C-A31F-4C58-BDA4-AAEE5779C9CD}" ShortID="905360602">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Iroha_EventLogin_Season_End" ID="{19295F48-AFBF-48C2-BC9B-5FEE4D0262E3}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HaulerIroha_Sigh" ID="{1A8F685E-29E6-4500-AF34-37E7B9A7383A}">
+					<ChildrenList>
+						<Action Name="" ID="{DF57E7DA-1037-45DC-A81A-E53AACAF19D4}" ShortID="725819597">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sigh" ID="{8B8E9B06-3236-4620-9E81-ABDE8639FDB3}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HaulerIroha_Laugh" ID="{DC8C1BF0-318F-4320-B1BA-0CDD9FEE32D7}">
+					<ChildrenList>
+						<Action Name="" ID="{A043E5A1-2938-4B18-B89A-818C49F57B1A}" ShortID="475897484">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Laugh" ID="{A341AE60-01B5-40F6-BEF7-C0558F6C765A}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1664,6 +1664,228 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Sigh" ID="{8B8E9B06-3236-4620-9E81-ABDE8639FDB3}" ShortID="459808810">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Sigh1" ID="{A57FACF7-60CC-46AF-897A-C30985466DDA}" ShortID="123195308">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh1" ID="{35368087-F5D7-4D30-BC12-24EE7E36A0F2}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="333683660"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh1" ID="{35368087-F5D7-4D30-BC12-24EE7E36A0F2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sigh2" ID="{FB3FAC7F-399C-46AE-AEED-F3EB0D3940C7}" ShortID="151290419">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh2" ID="{60C4035E-ED16-41AC-A89B-B803C7D260BC}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="707146857"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh2" ID="{60C4035E-ED16-41AC-A89B-B803C7D260BC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sigh3" ID="{D13E7010-46E3-4090-9E3B-56BFEE2B2BB8}" ShortID="380279652">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh3" ID="{15FED268-736E-423F-AE83-FBB0065B9373}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="783960664"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh3" ID="{15FED268-736E-423F-AE83-FBB0065B9373}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sigh4" ID="{E417511D-82FB-4AFB-8CC3-C8BB866CADBF}" ShortID="409037255">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh4" ID="{67506DDD-2094-4C24-B128-540E930F47F3}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="769029895"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh4" ID="{67506DDD-2094-4C24-B128-540E930F47F3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sigh5" ID="{53FA44AC-B469-4995-8C11-74150C46DB6F}" ShortID="157025266">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh5" ID="{3DADE71F-66D2-416C-A73D-DC98FA152DE6}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="734125752"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh5" ID="{3DADE71F-66D2-416C-A73D-DC98FA152DE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sigh6" ID="{C2C0D621-D2CA-4B5A-8FE4-2979C110164F}" ShortID="1054492341">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh6" ID="{1CBF9B2F-CE0B-4A7B-895F-F33C3A79DBA7}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="939928467"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh6" ID="{1CBF9B2F-CE0B-4A7B-895F-F33C3A79DBA7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Sigh7" ID="{31F0186F-0819-4722-ADF6-04DAF299146C}" ShortID="342746078">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Sigh7" ID="{F77B2309-948A-4648-9D4B-B657E25E06FB}">
+															<Language>SFX</Language>
+															<AudioFile>Sigh7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="921248178"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Sigh7" ID="{F77B2309-948A-4648-9D4B-B657E25E06FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Laugh" ID="{A341AE60-01B5-40F6-BEF7-C0558F6C765A}" ShortID="437957017">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Laugh1" ID="{5973DC88-B505-443C-AC25-02B399D5A134}" ShortID="1069377134">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Laugh1" ID="{4B9A3D62-BEA4-42E3-9EDD-A69986DE1754}">
+															<Language>SFX</Language>
+															<AudioFile>Laugh1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="324191079"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Laugh1" ID="{4B9A3D62-BEA4-42E3-9EDD-A69986DE1754}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Laugh2" ID="{3E3F669B-448B-462D-83CE-1CD0DB93DBE4}" ShortID="183474464">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6868691D-CF7C-44E3-B763-C887E5E33880}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F53BAE53-113C-4E0A-AD41-81D6EED81F63}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Laugh2" ID="{249C6CDB-03A2-4E39-9523-3376CD492341}">
+															<Language>SFX</Language>
+															<AudioFile>Laugh2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="868150139"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Laugh2" ID="{249C6CDB-03A2-4E39-9523-3376CD492341}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

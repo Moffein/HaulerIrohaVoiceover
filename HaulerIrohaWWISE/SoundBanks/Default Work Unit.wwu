@@ -11,14 +11,21 @@
 						<ObjectRef Name="Play_HaulerIroha_EventLobby4" ID="{63DD76FA-C859-41C0-8B02-ED469507EA74}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Lobby" ID="{97B6A47B-3C14-4226-A66C-A389FA801F0F}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_LevelUp_Short" ID="{54C881B8-82BF-42D7-9BDF-713BD634F863}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Laugh" ID="{DC8C1BF0-318F-4320-B1BA-0CDD9FEE32D7}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_TitleDrop" ID="{F84C79E6-7692-4368-9459-FAA4ABD0A575}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Shikatanai" ID="{D0621AF8-818E-43BE-9282-100B4D3D75AA}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Defeat" ID="{31D74D56-D0E8-4410-BB40-609B333F6493}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Darui" ID="{941CFF9D-39B3-44E5-9E75-766FCE904017}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Sigh" ID="{1A8F685E-29E6-4500-AF34-37E7B9A7383A}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Lobby_bday" ID="{2913225A-1748-4521-A918-8C5411589D7E}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Lobby_Newyear" ID="{71B95321-EF97-4595-9BB2-A8E2B1B0FF0A}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Thanks" ID="{582E6717-A691-4720-B836-671CBA0182EB}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Lobby_xmas" ID="{DA9A906E-793A-4762-B3C7-538CC55FE19E}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_TankCannon" ID="{7C329ED2-5AEB-4937-97C0-867019EC5E01}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_LevelUp_Long" ID="{A8D5ABEA-3F5F-4AC4-BDA8-CA79E980242F}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_AcquireScepter" ID="{98B16EEF-303D-4C31-A121-49A2E8171846}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Cafe2" ID="{4C92FB60-3054-4C3E-AE8F-E22C1839EA10}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_BeatGame" ID="{0BCD9548-CECA-4D0E-AA4B-F72309648972}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_ExDeploy" ID="{E05744F1-3BC3-4DA1-9958-5833723B8E0D}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Ex" ID="{99F105C9-51E3-4DF8-87AA-6FF6CEDD67C7}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_CommonSkill" ID="{49A68A21-78EB-4E86-A6C0-E78987AF239F}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
