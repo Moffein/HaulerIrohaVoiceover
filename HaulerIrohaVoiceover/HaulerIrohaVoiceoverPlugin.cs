@@ -18,7 +18,7 @@ namespace HaulerIrohaVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.Potmobile")]
     [BepInDependency("com.Schale.HaulerIrohaSkin")]
-    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.0")]
+    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.1")]
     public class HaulerIrohaVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTank, buttonCommon, buttonTitle, buttonCafe2, buttonDarui, buttonShikatanai, buttonThanks, buttonTonegawa, buttonSigh, buttonToramaru, buttonLaugh;
@@ -120,6 +120,7 @@ namespace HaulerIrohaVoiceover
 
         private void IrohaSelect(GameObject mannequinObject)
         {
+            if (!enableVoicelines.Value) return;
             bool played = false;
             if (!playedSeasonalVoiceline)
             {
