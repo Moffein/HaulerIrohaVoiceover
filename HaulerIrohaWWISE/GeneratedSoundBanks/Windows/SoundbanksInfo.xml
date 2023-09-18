@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="509147858" Language="SFX" Hash="105079419">
+		<SoundBank Id="509147858" Language="SFX" Hash="3062101182">
 			<ObjectPath>\SoundBanks\Default Work Unit\HaulerIrohaSoundbank</ObjectPath>
 			<ShortName>HaulerIrohaSoundbank</ShortName>
 			<Path>HaulerIrohaSoundbank.bnk</Path>
@@ -105,6 +105,14 @@
 						<File Id="1062455897" Language="SFX">
 							<ShortName>Iroha_ExSkill_2.wav</ShortName>
 							<Path>SFX\Iroha_ExSkill_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1352809697" Name="Play_HaulerIroha_Intro" ObjectPath="\Events\Default Work Unit\Play_HaulerIroha_Intro">
+					<IncludedMemoryFiles>
+						<File Id="279403255" Language="SFX">
+							<ShortName>Iroha_Gachaget.wav</ShortName>
+							<Path>SFX\Iroha_Gachaget_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

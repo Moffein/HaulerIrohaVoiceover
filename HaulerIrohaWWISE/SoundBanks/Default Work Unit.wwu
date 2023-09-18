@@ -23,6 +23,7 @@
 						<ObjectRef Name="Play_HaulerIroha_Lobby_xmas" ID="{DA9A906E-793A-4762-B3C7-538CC55FE19E}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_TankCannon" ID="{7C329ED2-5AEB-4937-97C0-867019EC5E01}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_LevelUp_Long" ID="{A8D5ABEA-3F5F-4AC4-BDA8-CA79E980242F}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HaulerIroha_Intro" ID="{E3BD4316-1FB7-4B1B-A4D4-07882597EE42}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_AcquireScepter" ID="{98B16EEF-303D-4C31-A121-49A2E8171846}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_Cafe2" ID="{4C92FB60-3054-4C3E-AE8F-E22C1839EA10}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HaulerIroha_BeatGame" ID="{0BCD9548-CECA-4D0E-AA4B-F72309648972}" WorkUnitID="{01BFA52E-B668-48D2-9922-E913D3546C93}" Origin="Manual" Filter="7"/>

@@ -267,6 +267,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_HaulerIroha_Intro" ID="{E3BD4316-1FB7-4B1B-A4D4-07882597EE42}">
+					<ChildrenList>
+						<Action Name="" ID="{B5D710C9-333C-4FB5-9ABD-FED1BD5455E8}" ShortID="274063150">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Iroha_Gachaget" ID="{A60E9E69-1E17-44EF-BB0A-E43F00F9477B}" WorkUnitID="{7C6D9F4C-EC00-4BA5-95E3-F517DF7DAAED}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -18,10 +18,10 @@ namespace HaulerIrohaVoiceover
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.Potmobile")]
     [BepInDependency("com.Schale.HaulerIrohaSkin")]
-    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.1")]
+    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.2")]
     public class HaulerIrohaVoiceoverPlugin : BaseUnityPlugin
     {
-        public static ConfigEntry<KeyboardShortcut> buttonTank, buttonCommon, buttonTitle, buttonCafe2, buttonDarui, buttonShikatanai, buttonThanks, buttonTonegawa, buttonSigh, buttonToramaru, buttonLaugh;
+        public static ConfigEntry<KeyboardShortcut> buttonTank, buttonCommon, buttonTitle, buttonCafe2, buttonDarui, buttonShikatanai, buttonThanks, buttonTonegawa, buttonSigh, buttonToramaru, buttonLaugh, buttonIntro;
         public static ConfigEntry<bool> enableVoicelines;
         public static bool playedSeasonalVoiceline = false;
         public static AssetBundle assetBundle;
@@ -44,6 +44,7 @@ namespace HaulerIrohaVoiceover
             enableVoicelines.SettingChanged += EnableVoicelines_SettingChanged;
 
             buttonTitle = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Blue Archive"), KeyboardShortcut.Empty);
+            buttonIntro = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Introduction"), KeyboardShortcut.Empty);
             buttonToramaru = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Toramaru"), KeyboardShortcut.Empty);
             buttonTank = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Shuhou Hassha"), KeyboardShortcut.Empty);
             buttonCommon = base.Config.Bind<KeyboardShortcut>(new ConfigDefinition("Keybinds", "Kougeki"), KeyboardShortcut.Empty);
@@ -78,6 +79,7 @@ namespace HaulerIrohaVoiceover
             RiskOfOptions.ModSettingsManager.SetModIcon(assetBundle.LoadAsset<Sprite>("Iroha"));
 
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonTitle));
+            RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonIntro));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonToramaru));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonTank));
             RiskOfOptions.ModSettingsManager.AddOption(new RiskOfOptions.Options.KeyBindOption(buttonCommon));
@@ -176,6 +178,7 @@ namespace HaulerIrohaVoiceover
             HaulerIrohaVoiceoverComponent.nseTonegawa = RegisterNSE("Play_HaulerIroha_EventLobby4");
             HaulerIrohaVoiceoverComponent.nseSigh = RegisterNSE("Play_HaulerIroha_Sigh");
             HaulerIrohaVoiceoverComponent.nseLaugh = RegisterNSE("Play_HaulerIroha_Laugh");
+            HaulerIrohaVoiceoverComponent.nseIntro = RegisterNSE("Play_HaulerIroha_Intro");
         }
 
         public void RefreshNSE()

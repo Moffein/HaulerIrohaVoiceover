@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	728460607	Play_HaulerIroha_Lobby_Halloween			\Default Work Unit\Play_HaulerIroha_Lobby_Halloween	
 	993867091	Play_HaulerIroha_BeatGame			\Default Work Unit\Play_HaulerIroha_BeatGame	
 	1040164616	Play_HaulerIroha_Darui			\Default Work Unit\Play_HaulerIroha_Darui	
+	1352809697	Play_HaulerIroha_Intro			\Default Work Unit\Play_HaulerIroha_Intro	
 	1440135129	Play_HaulerIroha_Victory			\Default Work Unit\Play_HaulerIroha_Victory	
 	1550702346	Play_HaulerIroha_Lobby_bday			\Default Work Unit\Play_HaulerIroha_Lobby_bday	
 	1579215392	Play_HaulerIroha_Shikatanai			\Default Work Unit\Play_HaulerIroha_Shikatanai	
@@ -35,6 +36,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	121650372	Iroha_Lobby_4	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_4		450226
 	148090643	Iroha_Relationship_Up_3	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Relationship_Up_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Relationship\Iroha_Relationship_Up_3		376994
 	276413791	Iroha_MemorialLobby_4	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_MemorialLobby_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Victory\Iroha_MemorialLobby_4		517582
+	279403255	Iroha_Gachaget	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Gachaget_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Iroha_Gachaget		860760
 	324181105	Iroha_Lobby_2	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Iroha_Lobby_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Lobby\Iroha_Lobby_2		181684
 	324191079	Laugh1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Laugh1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Laugh\Laugh1		132090
 	333683660	Sigh1	C:\Users\Node\RoR2 Mods\HaulerIrohaVoiceover\HaulerIrohaWWISE\.cache\Windows\SFX\Sigh1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\Voiceover\Sigh\Sigh1		88534

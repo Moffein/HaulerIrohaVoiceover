@@ -13,7 +13,7 @@ namespace HaulerIrohaVoiceover.Components
         private float utilityCooldown = 0f;
         private bool acquiredScepter = false;
 
-        public static NetworkSoundEventDef nseTank, nseCommon, nseTitle, nseCafe2, nseDarui, nseShikatanai, nseThanks, nseTonegawa, nseSigh, nseToramaru, nseLaugh;
+        public static NetworkSoundEventDef nseTank, nseCommon, nseTitle, nseCafe2, nseDarui, nseShikatanai, nseThanks, nseTonegawa, nseSigh, nseToramaru, nseLaugh, nseIntro;
 
         protected override void Start()
         {
@@ -116,46 +116,62 @@ namespace HaulerIrohaVoiceover.Components
             if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTitle))
             {
                 TryPlayNetworkSound(nseTitle, 3.6f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTank))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTank))
             {
                 TryPlayNetworkSound(nseTank, 1.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonCommon))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonCommon))
             {
                 TryPlayNetworkSound(nseCommon, 0.85f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonCafe2))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonCafe2))
             {
                 TryPlayNetworkSound(nseCafe2, 3.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonDarui))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonDarui))
             {
                 TryPlayNetworkSound(nseDarui, 1.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonShikatanai))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonShikatanai))
             {
                 TryPlayNetworkSound(nseShikatanai, 1.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonThanks))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonThanks))
             {
                 TryPlayNetworkSound(nseThanks, 7.5f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTonegawa))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonTonegawa))
             {
                 TryPlayNetworkSound(nseTonegawa, 4.8f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonSigh))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonSigh))
             {
                 TryPlayNetworkSound(nseSigh, 0.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonLaugh))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonLaugh))
             {
                 TryPlayNetworkSound(nseLaugh, 0.1f, false);
+                return;
             }
-            else if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonToramaru))
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonToramaru))
             {
                 TryPlayNetworkSound(nseToramaru, 7.5f, false);
+                return;
+            }
+            if (BaseVoiceoverLib.Utils.GetKeyPressed(HaulerIrohaVoiceoverPlugin.buttonToramaru))
+            {
+                TryPlayNetworkSound(nseIntro, 9.25f, false);
+                return;
             }
         }
     }
