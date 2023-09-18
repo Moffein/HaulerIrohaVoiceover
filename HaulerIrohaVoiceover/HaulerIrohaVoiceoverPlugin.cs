@@ -16,9 +16,10 @@ using BaseVoiceoverLib;
 namespace HaulerIrohaVoiceover
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
-    [BepInDependency("com.Moffein.Potmobile")]
-    [BepInDependency("com.Schale.HaulerIrohaSkin")]
-    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.2")]
+    [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.Moffein.Potmobile", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.Schale.HaulerIrohaSkin", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.3")]
     public class HaulerIrohaVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTank, buttonCommon, buttonTitle, buttonCafe2, buttonDarui, buttonShikatanai, buttonThanks, buttonTonegawa, buttonSigh, buttonToramaru, buttonLaugh, buttonIntro;
