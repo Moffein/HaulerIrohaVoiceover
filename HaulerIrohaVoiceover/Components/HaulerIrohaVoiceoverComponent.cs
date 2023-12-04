@@ -174,5 +174,10 @@ namespace HaulerIrohaVoiceover.Components
                 return;
             }
         }
+
+        public override bool ComponentEnableVoicelines()
+        {
+            return HaulerIrohaVoiceoverPlugin.enableVoicelines.Value;
+        }
     }
 }
