@@ -15,11 +15,12 @@ using BaseVoiceoverLib;
 
 namespace HaulerIrohaVoiceover
 {
+    [BepInDependency(R2API.SoundAPI.PluginGUID)]
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Moffein.Potmobile", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Schale.HaulerIrohaSkin", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.4")]
+    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.5")]
     public class HaulerIrohaVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTank, buttonCommon, buttonTitle, buttonCafe2, buttonDarui, buttonShikatanai, buttonThanks, buttonTonegawa, buttonSigh, buttonToramaru, buttonLaugh, buttonIntro;
@@ -38,6 +39,7 @@ namespace HaulerIrohaVoiceover
             {
                 assetBundle = AssetBundle.LoadFromStream(stream);
             }
+            SoundBanks.Init();
 
             InitNSE();
 
@@ -66,11 +68,6 @@ namespace HaulerIrohaVoiceover
         private void EnableVoicelines_SettingChanged(object sender, EventArgs e)
         {
             RefreshNSE();
-        }
-
-        private void Start()
-        {
-            SoundBanks.Init();
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]

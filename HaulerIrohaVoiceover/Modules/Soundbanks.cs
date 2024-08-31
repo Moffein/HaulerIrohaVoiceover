@@ -1,4 +1,5 @@
-﻿using System;
+﻿using R2API;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -20,9 +21,14 @@ namespace HaulerIrohaVoiceover.Modules
         {
             if (initialized) return;
             initialized = true;
-            AKRESULT akResult = AkSoundEngine.AddBasePath(SoundBankDirectory);
 
-            AkSoundEngine.LoadBank("HaulerIrohaSoundbank.bnk", out _);
+            using (Stream manifestResourceStream = new FileStream(SoundBankDirectory + "\\HaulerIrohaSoundbank.bnk", FileMode.Open))
+            {
+
+                byte[] array = new byte[manifestResourceStream.Length];
+                manifestResourceStream.Read(array, 0, array.Length);
+                SoundAPI.SoundBanks.Add(array);
+            }
         }
     }
 }

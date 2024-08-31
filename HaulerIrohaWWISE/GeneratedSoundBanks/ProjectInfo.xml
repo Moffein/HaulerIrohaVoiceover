@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="HaulerIrohaWWISE" GUID="{8DE28008-E854-4D58-B7CA-987454974B52}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{4A3C429E-8FD7-43A6-88C0-B9E0EB295745}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{9072DAD2-3247-4D27-BE51-EB52DF8418BC}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{F404D5A6-15A6-C21C-72FD-CD51A51B688C}</FileHash>
+</ProjectInfo>
