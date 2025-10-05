@@ -20,7 +20,7 @@ namespace HaulerIrohaVoiceover
     [BepInDependency("com.Moffein.BaseVoiceoverLib", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Moffein.Potmobile", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.Schale.HaulerIrohaSkin", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.5")]
+    [BepInPlugin("com.Schale.HaulerIrohaVoiceover", "HaulerIrohaVoiceover", "1.1.7")]
     public class HaulerIrohaVoiceoverPlugin : BaseUnityPlugin
     {
         public static ConfigEntry<KeyboardShortcut> buttonTank, buttonCommon, buttonTitle, buttonCafe2, buttonDarui, buttonShikatanai, buttonThanks, buttonTonegawa, buttonSigh, buttonToramaru, buttonLaugh, buttonIntro;
@@ -124,7 +124,7 @@ namespace HaulerIrohaVoiceover
             bool played = false;
             if (!playedSeasonalVoiceline)
             {
-                if (System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1)
+                if ((System.DateTime.Today.Month == 1 && System.DateTime.Today.Day == 1) || (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 31))
                 {
                     Util.PlaySound("Play_HaulerIroha_Lobby_Newyear", mannequinObject);
                     played = true;
@@ -139,7 +139,7 @@ namespace HaulerIrohaVoiceover
                     Util.PlaySound("Play_HaulerIroha_Lobby_Halloween", mannequinObject);
                     played = true;
                 }
-                else if (System.DateTime.Today.Month == 12 && System.DateTime.Today.Day == 25)
+                else if (System.DateTime.Today.Month == 12 && (System.DateTime.Today.Day == 24 || System.DateTime.Today.Day == 25))
                 {
                     Util.PlaySound("Play_HaulerIroha_Lobby_xmas", mannequinObject);
                     played = true;
