@@ -362,3 +362,8 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /OriginalSoundFiles
+/HaulerIrohaWWISE/GeneratedSoundBanks/Windows/HaulerIrohaSoundbank.bnk
+/HaulerIrohaWWISE/GeneratedSoundBanks/Windows/HaulerIrohaSoundbank.txt
+/HaulerIrohaWWISE/GeneratedSoundBanks/Windows/SoundbanksInfo.xml
+/HaulerIrohaWWISE/HaulerIrohaWWISE.Lenovo.validationcache
+/HaulerIrohaWWISE/HaulerIrohaWWISE.Lenovo.wsettings
