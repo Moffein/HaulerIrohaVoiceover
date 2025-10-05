@@ -32,6 +32,7 @@
 								<ActorMixer Name="Voiceover" ID="{6F51BFF5-C7D3-486C-905A-706024BE3427}" ShortID="875362427">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1884,6 +1885,7 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
